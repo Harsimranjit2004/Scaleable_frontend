@@ -2,7 +2,8 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import Editor from "@monaco-editor/react";
 import axios from "axios";
 
-const API_BASE = "http://141.148.79.21:3000";
+// const API_BASE = "http://141.148.79.21:3000";
+const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:3000";
 
 const LANGUAGES: Record<number, { label: string; monaco: string; default: string }> = {
  71: {
