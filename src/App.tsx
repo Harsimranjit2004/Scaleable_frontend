@@ -169,7 +169,7 @@ export default function App() {
     return () => clearInterval(interval);
   }, [fetchMetrics]);
 
-  useEffect(() => {
+   useEffect(() => {
     drawChart();
   }, [history]);
 
